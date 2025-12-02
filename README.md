@@ -10,6 +10,17 @@
 
 Repositori ini berisi implementasi praktikum Mobile Programming Modul #7 yang berfokus pada penerapan **Desain UI Modern** pada aplikasi Android menggunakan **Jetpack Compose** dan **Material Design 3 (MD3)**, termasuk fitur keamanan **Biometric Authentication (App Lock)**.
 
+---
+
+## Tim Developer
+
+| Peran | Nama | NIM | Profil GitHub |
+| :--- | :--- | :--- | :--- |
+| **Pengembang Proyek** | M. Kaspul Anwar | 230104040212 | [![](https://img.shields.io/badge/GitHub-M.KaspulAnwar-181717?style=flat&logo=github)](https://github.com/mkaspulanwar) |
+| **Dosen Pengampu** | Muhayat, M. IT | - | [![](https://img.shields.io/badge/GitHub-Muhayat,M.IT-181717?style=flat&logo=github)](https://github.com/muhayat-lab) |
+
+---
+
 ## Fitur Utama & Hasil Praktikum
 
 Proyek ini berhasil mengimplementasikan beberapa konsep inti Desain UI Modern:
@@ -62,15 +73,15 @@ id.antasari.p7_modern_ui_230104040212
 │       ├── Shape.kt                    # Bentuk Sudut Komponen
 │       ├── Type.kt                     # Konfigurasi Tipografi
 │       └── Theme.kt                    # Konfigurasi Tema Global (P7ModernUiTheme)
-├── MainActivity.kt               // [1] Entry point & App Lifecycle (Mengelola App Lock)
-├── SecureAuthApp.kt              // [2] Root Composable & Global Dependencies
-├── AccountStorage.kt             // [3] Handler untuk Local Data Persistence (Shared Preferences)
-├── BiometricUtils.kt             // [4] Helper untuk cek ketersediaan sensor Biometrik
-├── LoginScreen.kt                // [5] Screen: Halaman Otentikasi/Masuk
-├── CreateAccountScreen.kt        // [6] Screen: Halaman Pendaftaran Akun
-├── HomeScreen.kt                 // [7] Screen: Halaman Utama Aplikasi
-├── SecurityDetailsScreen.kt      // [8] Screen: Detail Keamanan
-├── SettingsScreen.kt             // [9] Screen: Pengaturan Tema (Dark/Light Mode) & Biometrik
+├── MainActivity.kt                     # [1] Entry point & App Lifecycle (Mengelola App Lock)
+├── SecureAuthApp.kt                    # [2] Root Composable & Global Dependencies
+├── AccountStorage.kt                   # [3] Handler untuk Local Data Persistence (Shared Preferences)
+├── BiometricUtils.kt                   # [4] Helper untuk cek ketersediaan sensor Biometrik
+├── LoginScreen.kt                      # [5] Screen: Halaman Otentikasi/Masuk
+├── CreateAccountScreen.kt              # [6] Screen: Halaman Pendaftaran Akun
+├── HomeScreen.kt                       # [7] Screen: Halaman Utama Aplikasi
+├── SecurityDetailsScreen.kt            # [8] Screen: Detail Keamanan
+├── SettingsScreen.kt                   # [9] Screen: Pengaturan Tema (Dark/Light Mode) & Biometrik
 
 ```
 
@@ -112,38 +123,28 @@ Dalam Compose, *style* diwujudkan dalam bentuk:
 * **IDE:** Android Studio
 * **Fitur Keamanan:** Biometric Library
 
-## 📸 Screenshoot Desain Aplikasi
+## Screenshoot Desain Aplikasi
 
-Aplikasi ini sepenuhnya mengadopsi Material Design 3 (MD3) dan mendukung tema dinamis. Perbedaan skema warna dapat dilihat jelas pada mode terang (Light Mode) dan mode gelap (Dark Mode).
+Aplikasi ini sepenuhnya mengadopsi Material Design 3 (MD3), menggunakan Dynamic Color, dan mendukung dua mode tema utama: Light Mode dan Dark Mode.
 
-### ☀️ Light Mode Preview
+### Light Mode Preview
 
-| Layar Login (MD3) | Layar Beranda (Home) | Layar Pengaturan (Settings) |
+| Layar 1: Login | Layar 2: Buat Akun | Layar 3: Beranda (Home) |
 | :---: | :---: | :---: |
-| ![Login Screen - Light](sreenshoots/login_light.jpg) | ![Home Screen - Light](sreenshoots/home_light.jpg) | ![Settings Screen - Light](sreenshoots/settings_light.jpg) |
-| *Menampilkan komponen MD3 seperti Outlined TextField.* | *Menampilkan Card dan TopAppBar.* | *Toggles untuk Dark Mode & App Lock Biometric.* |
+| ![Login Screen - Light](screenshoots/login.jpg) | ![Create Account Screen - Light](screenshoots/register.jpg) | ![Home Screen - Light](screenshoots/home.jpg) |
+| *Menampilkan komponen MD3 seperti Outlined TextField dan Primary Button.* | *Menunjukkan formulir pendaftaran dengan Tipografi MD3.* | *Menampilkan Card dan TopAppBar serta Dynamic Color Scheme.* |
+| **Layar 4: Pengaturan (Settings)** | **Layar 5: Detail Keamanan** | |
+| ![Settings Screen - Light](screenshoots/setting.jpg) | ![Security Details Screen - Light](screenshoots/security.jpg) | |
+| *Toggles untuk Dark Mode, Dynamic Color, dan App Lock Biometric.* | *Detail pengaturan Biometric Authentication.* | |
 
-### 🌙 Dark Mode Preview
+### Dark Mode Preview
 
-| Layar Login (MD3) | Layar Beranda (Home) | Layar Pengaturan (Settings) |
+| Layar 1: Login | Layar 2: Buat Akun | Layar 3: Beranda (Home) |
 | :---: | :---: | :---: |
-| ![Login Screen - Dark](sreenshoots/login_dark.jpg) | ![Home Screen - Dark](sreenshoots/home_dark.jpg) | ![Settings Screen - Dark](sreenshoots/settings_dark.jpg) |
-| *Aplikasi beralih ke skema warna gelap dengan kontras yang optimal.* | *Menguji Dynamic Color pada latar belakang gelap.* | *Memperlihatkan status App Lock Biometric yang aktif.* |
-
-## ⚙️ Cara Menjalankan Proyek
-
-1.  **Clone** repositori ini:
-    ```bash
-    git clone https://github.com/mkaspulanwar/P7-MODERN-UI-230104040212-SECUREAUTH
-    ```
-2.  Buka proyek di **Android Studio**.
-3.  Pastikan *device/emulator* yang digunakan mendukung **Biometric Authentication (Fingerprint/Face Unlock)** untuk menguji fitur App Lock.
-4.  Jalankan aplikasi pada *device* atau *emulator* (Target SDK 31+ disarankan untuk Dynamic Color).
+| ![Login Screen - Dark](screenshoots/login_dark.jpg) | ![Create Account Screen - Dark](screenshoots/register_dark.jpg) | ![Home Screen - Dark](screenshoots/home_dark.jpg) |
+| *Aplikasi beralih ke skema warna gelap dengan kontras yang optimal.* | *Penerapan Dark Mode pada formulir dan latar belakang.* | *Menguji Dynamic Color pada latar belakang gelap dan komponen.* |
+| **Layar 4: Pengaturan (Settings)** | **Layar 5: Detail Keamanan** | |
+| ![Settings Screen - Dark](screenshoots/setting_dark.jpg) | ![Security Details Screen - Dark](screenshoots/security_dark.jpg) | |
+| *Toggles mempertahankan state di tema gelap.* | *Memperlihatkan status App Lock Biometric yang aktif di tema gelap.* | |
 
 ---
-
-## 📸 Tampilan Aplikasi
-
-
-
-*(Ganti tag ini dengan gambar tangkapan layar (screenshot) aplikasi Anda)*
