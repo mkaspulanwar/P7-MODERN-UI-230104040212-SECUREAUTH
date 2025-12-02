@@ -1,20 +1,20 @@
-# 📱 Praktikum Mobile Programming #7: Menerapkan Desain UI Modern (P7ModernUi)
+# PRAKTIKUM #7+ : MENERAPKAN DESAIN UI MODERN (P7ModernUi + SecureAuth)
 
 Repositori ini berisi implementasi praktikum Mobile Programming Modul #7 yang berfokus pada penerapan **Desain UI Modern** pada aplikasi Android menggunakan **Jetpack Compose** dan **Material Design 3 (MD3)**, termasuk fitur keamanan **Biometric Authentication (App Lock)**.
 
-## 🚀 Fitur Utama & Hasil Praktikum
+## Fitur Utama & Hasil Praktikum
 
 Proyek ini berhasil mengimplementasikan beberapa konsep inti Desain UI Modern:
 
-* **🎨 Material Design 3 (MD3):** Penerapan sistem desain terbaru Android untuk antarmuka yang intuitif dan adaptif.
-* **🌈 Dynamic Color:** Aplikasi mampu menyesuaikan skema warna (Primary, Secondary, Tertiary, dll.) secara otomatis berdasarkan *wallpaper* pengguna (pada Android 12+).
-* **🌗 Dark Mode/Light Mode:** Implementasi tema gelap dan terang yang diatur melalui *Settings Screen* atau preferensi sistem.
-* **🔒 App Lock (Biometric Auth):** Menambahkan lapisan keamanan menggunakan **Biometric Authentication** (Fingerprint/Face Unlock) untuk melindungi akses ke aplikasi.
-* **📐 Komponen MD3:** Penggunaan komponen modern seperti `Button`, `Card`, `TextField`, dan `TopAppBar` dari pustaka Material 3 di Jetpack Compose.
+* **Material Design 3 (MD3):** Penerapan sistem desain terbaru Android untuk antarmuka yang intuitif dan adaptif.
+* **Dynamic Color:** Aplikasi mampu menyesuaikan skema warna (Primary, Secondary, Tertiary, dll.) secara otomatis berdasarkan *wallpaper* pengguna (pada Android 12+).
+* **Dark Mode/Light Mode:** Implementasi tema gelap dan terang yang diatur melalui *Settings Screen* atau preferensi sistem.
+* **App Lock (Biometric Auth):** Menambahkan lapisan keamanan menggunakan **Biometric Authentication** (Fingerprint/Face Unlock) untuk melindungi akses ke aplikasi.
+* **Komponen MD3:** Penggunaan komponen modern seperti `Button`, `Card`, `TextField`, dan `TopAppBar` dari pustaka Material 3 di Jetpack Compose.
 
 ---
 
-## ✔️ Tujuan Praktikum
+## Tujuan Praktikum
 
 Berikut adalah poin-poin tujuan yang telah dicapai dalam praktikum ini:
 
@@ -28,7 +28,7 @@ Berikut adalah poin-poin tujuan yang telah dicapai dalam praktikum ini:
 
 ---
 
-## 📘 Konsep Dasar yang Diimplementasikan
+## Konsep Dasar yang Diimplementasikan
 
 Praktikum ini berlandaskan pada konsep-konsep inti dalam pengembangan UI/UX modern Android:
 
@@ -58,7 +58,7 @@ Dalam Compose, *style* diwujudkan dalam bentuk:
 
 ---
 
-## 🛠️ Tools & Teknologi
+## Tools & Teknologi
 
 * **Bahasa Pemrograman:** Kotlin
 * **Framework UI:** Jetpack Compose
@@ -70,7 +70,7 @@ Dalam Compose, *style* diwujudkan dalam bentuk:
 
 1.  **Clone** repositori ini:
     ```bash
-    git clone [https://www.andarepository.com/](https://www.andarepository.com/)
+    git clone https://github.com/mkaspulanwar/P7-MODERN-UI-230104040212-SECUREAUTH
     ```
 2.  Buka proyek di **Android Studio**.
 3.  Pastikan *device/emulator* yang digunakan mendukung **Biometric Authentication (Fingerprint/Face Unlock)** untuk menguji fitur App Lock.
