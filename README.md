@@ -47,7 +47,7 @@ Berikut adalah poin-poin tujuan yang telah dicapai dalam praktikum ini:
 
 ---
 
-## 🗂️ Struktur Direktori Proyek
+## Struktur Direktori Proyek
 Proyek ini menggunakan struktur paket yang terorganisir, memisahkan logika utama (aplikasi entry point dan lifecycle) dari arsitektur UI (screens, components, theme, dan viewmodels).
 
 ```bash
@@ -84,6 +84,8 @@ id.antasari.p7_modern_ui_230104040212
 ├── SettingsScreen.kt                   # [9] Screen: Pengaturan Tema (Dark/Light Mode) & Biometrik
 
 ```
+
+---
 
 ## Konsep Dasar yang Diimplementasikan
 
@@ -122,6 +124,8 @@ Dalam Compose, *style* diwujudkan dalam bentuk:
 * **Design System:** Material Design 3 (MD3)
 * **IDE:** Android Studio
 * **Fitur Keamanan:** Biometric Library
+
+---
 
 ## Screenshoot Desain Aplikasi
 
